@@ -1,0 +1,10 @@
+# Workflow to Output Event Details on 'issues'
+# Output event details in the shell via 'echo'
+# Use the 'issues' event & 'github' context
+name: Output Details
+on: issues
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Output Github Context
+      run: echo "${{ toJSON(github.event) }}"
