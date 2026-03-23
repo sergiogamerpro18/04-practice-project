@@ -3,7 +3,7 @@ name: Deploy
 on: [push]
 jobs:
   deploy:
-	  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     # Run the lint, test & build scripts
     steps:
       - name: Get code
